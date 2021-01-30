@@ -1,4 +1,4 @@
-//first class ticket price
+//first class ticket price calculation
 function getFirstClassPrice(total) {
     const firstclassInput = document.getElementById("firstclass-count");
     const firstclassCount = parseInt(firstclassInput.value);
@@ -14,7 +14,7 @@ function getFirstClassPrice(total) {
     totalCalculator();
 }
 
-//Economy class ticket price
+//Economy class ticket price calculation
 function getEconomyPrice(total) {
     const economyInput = document.getElementById("economy-count");
     const economyCount = parseInt(economyInput.value);
@@ -31,23 +31,23 @@ function getEconomyPrice(total) {
 }
 
 
-//if firstclass ticket quantity increases
+//when firstclass ticket quantity increases
 document.getElementById("firstclass-increase").addEventListener('click', function () {
     getFirstClassPrice(true);
 });
 
-//if firstclass ticket quantity decreases
+//when firstclass ticket quantity decreases
 document.getElementById("firstclass-decrease").addEventListener('click', function () {
     getFirstClassPrice(false);
 });
 
 
-//if Economyclass ticket quantity increases
+//when Economyclass ticket quantity increases
 document.getElementById("economy-increase").addEventListener('click', function () {
     getEconomyPrice(true);
 });
 
-//if Economyclass ticket quantity decreases
+//when Economyclass ticket quantity decreases
 document.getElementById("economy-decrease").addEventListener('click', function () {
     getEconomyPrice(false);
 });
@@ -79,7 +79,7 @@ function totalCalculator() {
 }
 
 
-//Button click Output
+//Button click Output for final pricing
 document.getElementById("booking-button").addEventListener("click", function () {
 
 
