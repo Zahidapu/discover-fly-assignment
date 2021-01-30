@@ -67,8 +67,8 @@ nav ul li a:hover, a.active{
 .inp-width{
     min-width: 300px;
 }
-.plus-minus-btn{
-    color: #3352F2;
+.plus-minus-btn button{
+    color: darkred;
     font-size: 30px;
     padding: 2px;
     margin-top: 10px;
